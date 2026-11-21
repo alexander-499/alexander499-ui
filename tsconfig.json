@@ -2,14 +2,16 @@
   "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "noUncheckedIndexedAccess": true,
-      "lib": ["ES2025", "DOM", "DOM.Iterable"],
-    "paths": { "@/*": ["./src/*"] },
+    "lib": ["ES2025", "DOM", "DOM.Iterable"],
     "module": "preserve",
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "noEmit": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "skipLibCheck": true
   },
-  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "worker/**/*", "vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*", "eslint.config.*"],
-  "exclude": ["src/**/__tests__/*", "node_modules", "**/.OLD"]
+  "vueCompilerOptions": {
+    "fallthroughAttributes": true
+  },
+  "files": []
 }

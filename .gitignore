@@ -27,3 +27,11 @@ __screenshots__/
 *.timestamp-*-*.mjs
 .pnpm-lock.yaml
 .pnpm-workspace.yaml
+**/node_modules/
+**/dist/
+**/.vitepress/cache/
+**/.vitepress/dist/
+**/*.tsbuildinfo
+.env
+.env.*
+!.env.example

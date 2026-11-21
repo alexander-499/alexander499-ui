@@ -1,0 +1,14 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "vite/client"],
+    "paths": {
+      "@alexander499/ui": ["../../packages/ui/src/index.ts"],
+      "@/*": ["../../packages/ui/src/*"]
+    }
+  },
+  "vueCompilerOptions": {
+    "vitePressExtensions": [".md"]
+  },
+  "include": [ ".vitepress/**/*.ts", ".vitepress/**/*.mts", ".vitepress/**/*.vue", "**/*.ts", "**/*.vue", "**/*.md" ]
+}
